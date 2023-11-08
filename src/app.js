@@ -4,7 +4,8 @@ const app = express();
 
 app.use(express.json());
 
-//Rutas
 
+//Rutas
+app.use('/api', require('./routes/api'));
 
 module.exports = app;
